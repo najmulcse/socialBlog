@@ -26,10 +26,10 @@ SECRET_KEY = '0p969eyxurbe_2vdj!wr4g!(uq)v2p)3(4m=fx&jdq&my=3iv!'
 DEBUG = True
 
 #local testing
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 # after hosting
-ALLOWED_HOSTS = ['najmulcse.pythonanywhere.com']
+#ALLOWED_HOSTS = ['najmulcse.pythonanywhere.com']
 
 # Application definition
 
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'accounts',
+    'groups',
+    'posts'
 ]
 
 MIDDLEWARE = [
