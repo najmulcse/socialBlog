@@ -25,8 +25,11 @@ SECRET_KEY = '0p969eyxurbe_2vdj!wr4g!(uq)v2p)3(4m=fx&jdq&my=3iv!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#local testing
+# ALLOWED_HOSTS = []
 
+# after hosting
+ALLOWED_HOSTS = ['najmulcse.pythonanywhere.com']
 
 # Application definition
 
@@ -82,6 +85,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 #     }
 # }
 
+# local hosting
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -91,6 +95,17 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
+# anywhere hosting
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'najmulcse$social_blog',
+#         'USER': 'najmulcse',
+#         'PASSWORD': 'testpassdb',
+#         'HOST': 'najmulcse.mysql.pythonanywhere-services.com'
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
