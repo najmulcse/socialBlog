@@ -1,0 +1,6 @@
+python anywhere database credentials for social blog
+----------------------------------------------------
+bd host address:najmulcse.mysql.pythonanywhere-services.com 
+username: najmulcse
+db name : najmulcse$social_blog
+db password: testpassdb
