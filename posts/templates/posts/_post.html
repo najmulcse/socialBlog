@@ -1,0 +1,20 @@
+
+<div class="post media">
+    <h3>{{ post.message_html|safe }}</h3>
+    <div class="media-body">
+        <strong>{{ post.user.username }}</strong>
+        <h5 class="media-heading">
+            <span class="username">
+
+            </span>
+            <time class="time">
+                <a href="{% url 'posts:single' username=post.user.username pk=post.pk %}">
+
+                </a>
+            </time>
+        </h5>
+        <div class="media-footer">
+
+        </div>
+    </div>
+</div>
